@@ -3,138 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Mohamed Khobouz, Développeur Web Full-Stack (PHP/Symfony) avec 5 ans d'expérience. Compétences en création d'applications web sécurisées, optimisées et performantes.">
     <title>CV de Mohamed Khobouz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
-        h1, h2, h3, h4 {
-            color: #2c3e50;
-            margin-bottom: 10px;
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
         }
         h1 {
             font-size: 2.5em;
-            margin-bottom: 0;
+            margin: 0;
+            color: #0095D9; /* Bleu Photoshop */
         }
         h2 {
             font-size: 1.8em;
             margin-top: 5px;
+            color: #0095D5; /* Rose Photoshop */
         }
         .contact-info {
             margin-bottom: 20px;
-            background: #3498db;
-            color: #fff;
-            padding: 15px;
-            border-radius: 8px;
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #0095D9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: #007BB8; /* Couleur sombre au survol */
         }
         .section {
-            margin-bottom: 30px;
-            padding: 15px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 10px 15px; /* Padding ajouté pour les sections */
+            border-radius: 5px;
+            background-color: #eff1f3; /* Couleur de fond des sections */
         }
-        .skills ul {
-            list-style-type: none;
-            padding: 0;
+        h3, h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
         }
-        .skills li {
-            margin-bottom: 5px;
+        ul {
+            padding-left: 20px;
+        }
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px auto;
+            border: 2px solid #0095D9;
+            transition: transform 0.3s;
+        }
+        .profile-image:hover {
+            transform: scale(1.05);
         }
         footer {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 0.9em;
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            .contact-info {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>KHOBBOUZ MOHAMED</h1>
-    <h2>Développeur Web Full-Stack (PHP/Symfony)</h2>
-    <div class="contact-info">
-        <p>📍 1 Bd de la Gare, Appt 14, Ain Sebaa, Casablanca</p>
-        <p>📧 <a href="mailto:khobouz.mohamed@gmail.com" style="color: #fff; text-decoration: none;">khobouz.mohamed@gmail.com</a> | 📞 +212 6 76 95 96 20</p>
-        <p>👤 <a href="#" style="color: #fff; text-decoration: none;">LinkedIn</a> | 🐙 <a href="#" style="color: #fff; text-decoration: none;">GitHub</a></p>
-    </div>
-
-    <div class="section">
-        <h3>PROFIL</h3>
-        <p>Développeur web full-stack avec 5 ans d'expérience, spécialisé en <strong>PHP</strong> et <strong>Symfony</strong>. Expert en création d'applications web sécurisées, optimisées et performantes. Je maîtrise les technologies front-end (HTML5, CSS3, JavaScript, React JS) et les bases de données (MySQL, MongoDB). Habitué à travailler en <strong>Agile</strong>, je suis également compétent en optimisation des performances, debugging et gestion de projets de bout en bout.</p>
-    </div>
-
-    <div class="section">
-        <h3>EXPÉRIENCES PROFESSIONNELLES</h3>
-        <h4>Développeur PHP Symfony</h4>
-        <p><strong>Epitech Maroc – Casablanca</strong> | Novembre 2022 - Aujourd'hui</p>
-        <ul>
-            <li>Développement et maintenance d'applications pour la prospection et gestion des clients d'un centre d'épilation et de beauté.</li>
-            <li>Analyse des besoins clients, conception et développement de nouvelles fonctionnalités en respectant les normes de sécurité.</li>
-            <li>Optimisation des performances des applications et correction des bugs.</li>
-            <li>Collaboration avec les équipes SEO pour améliorer la visibilité des sites web.</li>
-        </ul>
+    <div class="container">
+        <header>
+            <img src="https://via.placeholder.com/150" alt="Photo de Mohamed Khobouz" class="profile-image">
+            <h1>KHOBBOUZ MOHAMED</h1>
+            <h2>Développeur Web Full-Stack (PHP/Symfony)</h2>
+        </header>
         
-        <h4>Développeur Web Full-Stack</h4>
-        <p><strong>Techtrend Solutions – Casablanca</strong> | Août 2021 - Octobre 2022</p>
-        <ul>
-            <li>Développement et maintenance d'une plateforme e-commerce pour des professionnels de l'automobile.</li>
-            <li>Implémentation de nouvelles fonctionnalités selon les besoins clients, avec une approche méthode Agile.</li>
-            <li>Débogage des erreurs et optimisation des requêtes SQL pour améliorer les performances.</li>
-        </ul>
-        
-        <h4>Développeur Informatique</h4>
-        <p><strong>Performante Solution – Casablanca</strong> | Septembre 2019 - Août 2021</p>
-        <ul>
-            <li>Conception et développement d'applications événementielles et d'outils de gestion interne.</li>
-            <li>Proposition de solutions techniques adaptées aux besoins clients, optimisation SQL et gestion des badges.</li>
-        </ul>
+        <div class="contact-info">
+            <p><strong>Adresse :</strong> 1 Bd de la Gare, Appt 14, Ain Sebaa, Casablanca</p>
+            <p><strong>Email :</strong> <a href="mailto:khobouz.mohamed@gmail.com">khobouz.mohamed@gmail.com</a></p>
+            <p><strong>Téléphone :</strong> +212 6 76 95 96 20</p>
+            <p><strong>Profil Professionnel :</strong> <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+        </div>
+
+        <div class="section">
+            <h3>PROFIL</h3>
+            <p>Développeur web full-stack avec 5 ans d'expérience, spécialisé en <strong>PHP</strong> et <strong>Symfony</strong>. Expert en création d'applications web sécurisées, optimisées et performantes. Je maîtrise les technologies front-end (HTML5, CSS3, JavaScript, React JS) et les bases de données (MySQL, MongoDB). Habitué à travailler en <strong>Agile</strong>, je suis également compétent en optimisation des performances, debugging et gestion de projets de bout en bout.</p>
+        </div>
+
+        <div class="section experiences">
+            <h3>EXPÉRIENCES PROFESSIONNELLES</h3>
+            <h4>Epitech Maroc – Casablanca</h4>
+            <p><strong>Développeur PHP Symfony</strong> | Novembre 2022 - Aujourd'hui</p>
+            <ul>
+                <li>Développement et maintenance d'applications pour la prospection et gestion des clients d'un centre d'épilation et de beauté.</li>
+                <li>Analyse des besoins clients, conception et développement de nouvelles fonctionnalités en respectant les normes de sécurité.</li>
+                <li>Optimisation des performances des applications et correction des bugs.</li>
+                <li>Collaboration avec les équipes SEO pour améliorer la visibilité des sites web.</li>
+            </ul>
+            
+            <h4>Techtrend Solutions – Casablanca</h4>
+            <p><strong>Développeur Web Full-Stack</strong> | Août 2021 - Octobre 2022</p>
+            <ul>
+                <li>Développement et maintenance d'une plateforme e-commerce pour des professionnels de l'automobile.</li>
+                <li>Implémentation de nouvelles fonctionnalités selon les besoins clients, avec une approche méthode Agile.</li>
+                <li>Débogage des erreurs et optimisation des requêtes SQL pour améliorer les performances.</li>
+            </ul>
+            
+            <h4>Performante Solution – Casablanca</h4>
+            <p><strong>Développeur Informatique</strong> | Septembre 2019 - Août 2021</p>
+            <ul>
+                <li>Conception et développement d'applications événementielles et d'outils de gestion interne.</li>
+                <li>Proposition de solutions techniques adaptées aux besoins clients, optimisation SQL et gestion des badges.</li>
+            </ul>
+        </div>
+
+        <div class="section skills">
+            <h3>COMPÉTENCES</h3>
+            <ul>
+                <li><strong>Langages de Programmation :</strong> PHP, C#, Python, C/C++, JavaScript, HTML5, CSS3, JSON, XML.</li>
+                <li><strong>Frameworks :</strong> Symfony, Laravel, React JS, jQuery, ASP.NET MVC.</li>
+                <li><strong>Bases de Données :</strong> MySQL, MongoDB, SQL Server.</li>
+                <li><strong>Outils et Méthodes :</strong> Git, Docker, Jenkins, Agile, Trello, Jira.</li>
+                <li><strong>Systèmes d'Exploitation :</strong> Linux, Windows.</li>
+                <li><strong>Serveurs Web :</strong> Apache, Nginx, IIS.</li>
+                <li><strong>Cloud Computing :</strong> Azure, AWS.</li>
+            </ul>
+        </div>
+
+        <div class="section education">
+            <h3>ÉDUCATION</h3>
+            <h4>Epitech Maroc – Settat</h4>
+            <p><strong>Licence Professionnelle Universitaire</strong> | 2019 - 2020</p>
+            <p>Ingénierie de conception et développement d'applications</p>
+
+            <h4>Institut Spécialisé Appliqué de Gestion – Meknès</h4>
+            <p><strong>Diplôme de Technicien Spécialisé</strong> | 2017 - 2019</p>
+            <p>Développement Informatique</p>
+
+            <h4>Lycée Soud Ali El Makhzani – Meknès</h4>
+            <p><strong>Baccalauréat Scientifique</strong> | 2016 - 2017</p>
+            <p>Option Physique-Chimie</p>
+        </div>
+
+        <div class="section languages">
+            <h3>LANGUES</h3>
+            <ul>
+                <li><strong>Arabe :</strong> Langue maternelle.</li>
+                <li><strong>Français :</strong> Courant (écrit et parlé).</li>
+                <li><strong>Anglais :</strong> Niveau intermédiaire (utilisation technique).</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2024 Mohamed Khobouz</p>
+        </footer>
     </div>
-
-    <div class="section skills">
-        <h3>COMPÉTENCES</h3>
-        <ul>
-            <li><strong>Langages de Programmation :</strong> PHP, C#, Python, C/C++, JavaScript, HTML5, CSS3, JSON, XML.</li>
-            <li><strong>Frameworks :</strong> Symfony, Laravel, React JS, jQuery, ASP.NET MVC.</li>
-            <li><strong>Bases de Données :</strong> MySQL, MongoDB, SQL Server.</li>
-            <li><strong>Outils et Méthodes :</strong> Git, Docker, Jenkins, Agile, Trello, Jira.</li>
-            <li><strong>Systèmes d'Exploitation :</strong> Linux, Windows.</li>
-            <li><strong>Serveurs Web :</strong> Apache, Nginx, IIS.</li>
-            <li><strong>Cloud Computing :</strong> Azure, AWS.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h3>ÉDUCATION</h3>
-        <h4>Licence Professionnelle Universitaire</h4>
-        <p><strong>Epitech Maroc – Settat</strong> | 2019 - 2020</p>
-        <p>Ingénierie de conception et développement d'applications</p>
-
-        <h4>Diplôme de Technicien Spécialisé</h4>
-        <p><strong>Institut Spécialisé Appliqué de Gestion – Meknès</strong> | 2017 - 2019</p>
-        <p>Développement Informatique</p>
-
-        <h4>Baccalauréat Scientifique</h4>
-        <p><strong>Lycée Soud Ali El Makhzani – Meknès</strong> | 2016 - 2017</p>
-        <p>Option Physique-Chimie</p>
-    </div>
-
-    <div class="section">
-        <h3>LANGUES</h3>
-        <ul>
-            <li><strong>Arabe :</strong> Langue maternelle.</li>
-            <li><strong>Français :</strong> Courant (écrit et parlé).</li>
-            <li><strong>Anglais :</strong> Niveau intermédiaire (utilisation technique).</li>
-        </ul>
-    </div>
-
-    <footer>
-        <p>© 2024 Mohamed Khobouz</p>
-    </footer>
 
 </body>
 </html>
