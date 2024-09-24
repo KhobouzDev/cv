@@ -90,11 +90,11 @@
             font-size: 0.9em;
         }
         
-        .experience h4 {
+        .experience h4 , .education h4 {
             margin: 0;
         }
         
-        .experience p {
+        .experience p , .education p {
             margin : 0
         }
         
@@ -102,9 +102,14 @@
             margin: 10px;
         }
         
+        .technologies-title, .missions-title {
+            color: black !important;
+            margin: 8px 0 !important;
+        }
+        
         .experience ul {
             margin: 0;
-            padding-left: 50px;
+            /*padding-left: 50px;*/
         }
         /* Responsive styles */
         @media (max-width: 768px) {
@@ -139,7 +144,7 @@
 
     <div class="container">
         <header>
-            <img src="https://via.placeholder.com/150" alt="Photo professionnelle de Mohamed Khobouz" class="profile-image">
+            <!--<img src="https://via.placeholder.com/150" alt="Photo professionnelle de Mohamed Khobouz" class="profile-image">-->
             <h1>KHOBOUZ MOHAMED</h1>
             <h2>Développeur Web Full-Stack</h2>
         </header>
@@ -162,7 +167,7 @@
               <p><strong>Epiltech Maroc – Casablanca</strong> | Novembre 2022 - Aujourd'hui</p>
               <h4><i>Développeur PHP Symfony</i></h4>
               <p>Développement et maintenance des applications de prospection, de suivi et de gestion des clients du centre d'épilation et de beauté.</p>
-              <h5>Missions principales :</h5>
+              <h4 class="missions-title">Missions principales :</h4>
               <ul>
                   <li>Analyse, conception, développement et adaptation de nouvelles fonctionnalités en fonction des besoins du client, en utilisant un code propre, sécurisé et respectant les normes de qualité.</li>
                   <li>Débogage et correction des bugs.</li>
@@ -172,7 +177,7 @@
                   <li>Collaboration sur le SEO des sites web.</li>
                   <li>l'encadrement et l'intégration des nouveaux collaborateurs.</li>
               </ul>
-              <h5>Technologies et outils :</h5>
+              <h4 class="technologies-title">Technologies et outils :</h4>
               <ul>
                   <li><strong>Front-end : </strong>HTML5, CSS3, Bootstrap 4 & 5, JavaScript, jQuery.</li>
                   <li><strong>Back-end : </strong>PHP, Symfony v2.8 (Framework MVC).</li>
@@ -186,7 +191,7 @@
               <p><strong>TechTrend Solutions - Casablanca</strong> | Août 2021 - Octobre 2022</p>
               <h4><i>DÉVELOPPEUR WEB FULL-STACK</i></h4>
               <p>Développement et maintenance d'une plateforme Européenne B2B d'e-commerce dédiée aux professionnels de l'automobile (07zr.com).</p>
-              <h5>Missions principales :</h5>
+              <h4 class="missions-title">Missions principales :</h4>
               <ul>
                   <li>Développement des applications et services à travers du code propre, sécurisé, qui respecte les normes de qualité.</li>
                   <li>Participer à l'analyse, conception, développement et adaptation des nouvelles fonctionnalités selon les besoins du client en méthode agile.</li>
@@ -195,7 +200,7 @@
                   <li>Proposition de solutions techniques adaptées.</li>
                   <li>Accompagnement de la recette fonctionnelle.</li>
               </ul>
-              <h5>Technologies et outils :</h5>
+              <h4 class="technologies-title">Technologies et outils :</h4>
               <ul>
                   <li><strong>Front-end : </strong>HTML5, CSS3, Bootstrap 4 & 5, JavaScript, React JS, jQuery.</li>
                   <li><strong>Back-end : </strong>PHP, Symfony (MVC Framework).</li>
@@ -209,14 +214,14 @@
               <p><strong>Performante Solution - Casablanca</strong> | Septembre 2019 - Août 2021</p>
               <h4><i>DÉVELOPPEUR INFORMATIQUE</i></h4>
               <p>Conception, développement et maintenance des applications orientées à l'informatique événementielle.</p>
-              <h5>Missions principales :</h5>
+              <h4 class="missions-title">Missions principales :</h4>
               <ul>
                   <li>Développement des applications orientées à l'informatique événementielle (gestion automatique des badges - contrôle d'accès).</li>
                   <li>Développement des solutions techniques selon les besoins du client.</li>
                   <li>Débogage, Tests et correction des bugs.</li>
                   <li>Optimisation des requêtes SQL.</li>
               </ul>
-              <h5>Technologies et outils :</h5>
+              <h4 class="technologies-title">Technologies et outils :</h4>
               <ul>
                   <li><strong>Front-end : </strong>HTML5, CSS3, Bootstrap 4, JavaScript, React JS, jQuery.</li>
                   <li><strong>Back-end : </strong>.NET Frameworks, PHP, Laravel (MVC Framework).</li>
@@ -243,14 +248,15 @@
 
         <div class="section education">
             <h3>ÉDUCATION</h3>
+            
             <h4>Faculté des Sciences et Techniques - Settat</h4>
             <p><strong>Licence Professionnelle Universitaire</strong> | 2019 - 2020</p>
             <p>Ingénierie de conception et de développement d’applications</p>
-
+            <hr style="margin: 20px 20%;">
             <h4>Institut Spécialisé Appliqué de Gestion – Meknès</h4>
             <p><strong>Diplôme de Technicien Spécialisé</strong> | 2017 - 2019</p>
             <p>Techniques de développement informatique</p>
-
+            <hr style="margin: 20px 20%;">
             <h4>Lycée Ouad El Makhazin - Ouislane/Méknès</h4>
             <p><strong>Baccalauréat Scientifique</strong> | 2016 - 2017</p>
             <p>sciences expérimentale option physique chimie</p>
@@ -265,9 +271,9 @@
             </ul>
         </div>
 
-        <footer>
-            <p>© 2024 Mohamed Khobouz</p>
-        </footer>
+        <!--<footer>-->
+        <!--    <p>© 2024 Mohamed Khobouz</p>-->
+        <!--</footer>-->
     </div>
 
 </body>
